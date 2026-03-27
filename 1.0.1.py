@@ -1,3 +1,4 @@
+# mejora uno Javier Martin Sanchez Flores
 # Programa para leer numeros y sacar suma, promedio, mayor y menor
 
 # Funcion para leer numeros con validacion
