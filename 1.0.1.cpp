@@ -1,3 +1,6 @@
+jose angel herrera hernandez
+27/03/2026
+    cambie librerias 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,7 +12,7 @@ typedef struct {
     float promedio;
 } Estudiante;
 
-// Función para crear un estudiante
+// FunciÃ³n para crear un estudiante
 Estudiante* crearEstudiante(int id, const char* nombre, float promedio) {
     Estudiante* e = (Estudiante*) malloc(sizeof(Estudiante));
     
@@ -20,20 +23,20 @@ Estudiante* crearEstudiante(int id, const char* nombre, float promedio) {
 
     e->id = id;
     strncpy(e->nombre, nombre, sizeof(e->nombre) - 1);
-    e->nombre[sizeof(e->nombre) - 1] = '\0'; // asegurar terminación
+    e->nombre[sizeof(e->nombre) - 1] = '\0'; // asegurar terminaciÃ³n
     e->promedio = promedio;
 
     return e;
 }
 
-// Función para mostrar un estudiante
+// FunciÃ³n para mostrar un estudiante
 void mostrarEstudiante(const Estudiante* e) {
     printf("ID: %d\n", e->id);
     printf("Nombre: %s\n", e->nombre);
     printf("Promedio: %.2f\n\n", e->promedio);
 }
 
-// Función para liberar memoria
+// FunciÃ³n para liberar memoria
 void liberarEstudiante(Estudiante* e) {
     free(e);
 }
@@ -41,13 +44,13 @@ void liberarEstudiante(Estudiante* e) {
 int main() {
     int n;
 
-    printf("¿Cuantos estudiantes quieres registrar? ");
+    printf("Â¿Cuantos estudiantes quieres registrar? ");
     if (scanf("%d", &n) != 1 || n <= 0) {
-        printf("Entrada inválida\n");
+        printf("Entrada invÃ¡lida\n");
         return 1;
     }
 
-    // Arreglo dinámico de punteros
+    // Arreglo dinÃ¡mico de punteros
     Estudiante** lista = (Estudiante**) malloc(n * sizeof(Estudiante*));
     
     if (lista == NULL) {
@@ -64,16 +67,16 @@ int main() {
 
         printf("ID: ");
         if (scanf("%d", &id) != 1) {
-            printf("Entrada inválida\n");
+            printf("Entrada invÃ¡lida\n");
             return 1;
         }
 
         printf("Nombre: ");
-        scanf(" %49[^\n]", nombre); // limita tamaño para evitar overflow
+        scanf(" %49[^\n]", nombre); // limita tamaÃ±o para evitar overflow
 
         printf("Promedio: ");
         if (scanf("%f", &promedio) != 1) {
-            printf("Entrada inválida\n");
+            printf("Entrada invÃ¡lida\n");
             return 1;
         }
 
