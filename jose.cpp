@@ -1,4 +1,7 @@
-
+jose angel herrera hernandez
+27/03/2026
+    1.1.0 â†’ mejora (MINOR)
+    cambio en la estructura
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +14,7 @@ typedef struct {
     float promedio;
 } Estudiante;
 
-// Función para crear un estudiante
+// FunciÃ³n para crear un estudiante
 Estudiante* crearEstudiante(int id, const char* nombre, float promedio) {
     Estudiante* e = (Estudiante*) malloc(sizeof(Estudiante));
     if (e == NULL) {
@@ -24,14 +27,14 @@ Estudiante* crearEstudiante(int id, const char* nombre, float promedio) {
     return e;
 }
 
-// Función para mostrar un estudiante
+// FunciÃ³n para mostrar un estudiante
 void mostrarEstudiante(Estudiante* e) {
     printf("ID: %d\n", e->id);
     printf("Nombre: %s\n", e->nombre);
     printf("Promedio: %.2f\n\n", e->promedio);
 }
 
-// Función para liberar memoria
+// FunciÃ³n para liberar memoria
 void liberarEstudiante(Estudiante* e) {
     free(e);
 }
@@ -39,10 +42,10 @@ void liberarEstudiante(Estudiante* e) {
 int main() {
     int n;
 
-    printf("¿Cuantos estudiantes quieres registrar? ");
+    printf("Â¿Cuantos estudiantes quieres registrar? ");
     scanf("%d", &n);
 
-    // Arreglo dinámico de punteros
+    // Arreglo dinÃ¡mico de punteros
     Estudiante** lista = (Estudiante**) malloc(n * sizeof(Estudiante*));
 
     for (int i = 0; i < n; i++) {
