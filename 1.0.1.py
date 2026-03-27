@@ -1,5 +1,6 @@
 # mejora uno Javier Martin Sanchez Flores
 # Programa para leer numeros y sacar suma, promedio, mayor y menor
+la mejora fue que contara los numeros positivos y negativos
 
 # Funcion para leer numeros con validacion
 def leer_numeros(n):
