@@ -1,3 +1,6 @@
+27/03/2026
+    jose angel  herrera Hernández 
+mejora menor cambio en la estructura
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
