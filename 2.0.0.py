@@ -1,3 +1,6 @@
+TORRES DUARTE, MICHELLE DANIELA
+27/03/2026
+solo se le hizo una mejora al ejecutar y dio como codigo final
 # Programa para leer numeros y sacar suma, promedio, mayor y menor
 
 # Funcion para leer numeros con validacion
