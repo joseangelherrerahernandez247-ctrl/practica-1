@@ -1,3 +1,6 @@
+emmanuel llanos andrade
+27/03/2026
+cmabios de que fuera mas simple de sacar el promedio
 # Programa para leer numeros y sacar suma, promedio, mayor y menor
 
 # Funcion para leer numeros con validacion
